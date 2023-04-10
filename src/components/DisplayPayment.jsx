@@ -80,7 +80,10 @@ const DisplayPayment = () => {
            setName('');
 
            setShow(false);
+
+           setTimeout(() => {
            window.location.reload();
+         }, 3000)
         }
 
        } catch(error) {
