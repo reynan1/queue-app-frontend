@@ -44,7 +44,9 @@ const ListQueue = () => {
           text: `serve is done`
         })
 
-        window.location.reload();
+        setTimeout(() => {
+          window.location.reload();
+        }, 3000); 
       }
 
     } catch(error) {
@@ -105,8 +107,10 @@ const ListQueue = () => {
            icon: 'success',
            text: `serve is now ongoing`
          })
-
-         window.location.reload();
+         
+         setTimeout(() => {
+           window.location.reload();
+          }, 3000); 
         }
       } catch(error) {
         console.log(error);
